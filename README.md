@@ -28,7 +28,7 @@ The server was promoted to a Domain Controller and a new domain was created.
 ## Organizational Unit (OU) Structure
 
 Designed an OU structure to organize users, computers, and resources by department.
-EarnMyTravel
+ABC
 ├── HR
 ├── Accounts
 ├── Sales
@@ -55,10 +55,10 @@ Created security groups for departments and resource access.
 
 Example groups:
 
-- HR_Share_Access  
-- Accounts_Share_Access  
-- Sales_Share_Access  
-- IT_Admins  
+- HR_SG  
+- Accounts_SG
+- Sales_SG
+- IT_SG
 
 Groups simplify **access control and permission management**.
 
@@ -71,7 +71,12 @@ Implemented the **AGDLP model**:
 **Accounts → Global Groups → Domain Local Groups → Permissions**
 
 This model is commonly used in enterprise environments to manage permissions efficiently.
+Example groups:
 
+- DL_HR_SG  
+- DL_Accounts_SG
+- DL_Sales_SG
+- DL_IT_SG
 ---
 
 ## File Server Configuration

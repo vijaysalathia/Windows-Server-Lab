@@ -1,0 +1,69 @@
+# User Account Creation
+
+User accounts were created in Active Directory to represent employees in the organization.  
+Each user account allows individuals to authenticate in the domain and access network resources such as shared folders, printers, and applications.
+
+In this lab environment, user accounts were created for different departments within the sample organization **ABC**.
+
+---
+
+## Purpose of User Accounts
+
+User accounts are required to:
+
+- Authenticate users in the domain
+- Provide controlled access to network resources
+- Assign permissions through security groups
+- Apply policies using Group Policy
+
+Each employee in an organization typically has **one unique domain account**.
+
+---
+
+## User Organization
+
+Users were placed in their respective **Organizational Units (OU)** according to their department.
+
+Example structure:
+ABC
+├── HR
+│ ├── hr_user1
+│ └── hr_user2
+├── Accounts
+│ ├── acc_user1
+│ └── acc_user2
+├── Sales
+│ ├── sales_user1
+│ └── sales_user2
+├── IT
+│ ├── it_admin1
+│ └── it_admin2
+
+
+This structure helps administrators manage users efficiently and apply policies at the OU level.
+
+---
+
+## User Account Configuration
+
+During account creation, the following settings were configured:
+
+- First Name and Last Name
+- User Logon Name
+- Initial Password
+- Password must be changed at next logon
+- User added to appropriate security groups
+
+These settings help maintain **secure and structured user management**.
+
+---
+
+## Benefits of Structured User Creation
+
+- Centralized authentication
+- Easier user management
+- Better security control
+- Simplified permission assignment
+- Efficient Group Policy application
+
+---

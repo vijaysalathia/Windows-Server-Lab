@@ -1,0 +1,76 @@
+# Security Groups
+
+Security Groups were created in Active Directory to manage user access to shared resources and simplify permission management.
+
+Instead of assigning permissions directly to individual users, users are added to security groups. Permissions are then assigned to the group.
+
+This approach improves **security, scalability, and administrative efficiency**.
+
+---
+
+## Purpose of Security Groups
+
+Security groups allow administrators to:
+
+- Manage permissions more efficiently
+- Control access to shared folders and network resources
+- Simplify user management
+- Follow enterprise access control best practices
+
+---
+
+## Example Scenario
+
+In a sample organization **ABC**, different departments require access to their respective shared folders.
+
+Example structure:
+ABC
+├── HR_SG
+├── Accounts_SG
+├── Sales_SG
+├── IT_SG
+
+
+
+Users belonging to a department are added to their respective **security group**, and access permissions are granted through that group.
+
+---
+
+## Best Practice Used
+
+This project follows the **AGDLP permission model** commonly used in enterprise environments.
+
+AGDLP stands for:
+
+Accounts → Global Groups → Domain Local Groups → Permissions
+
+Example structure:
+ABC
+├── DL_HR_SG
+├── DL_Accounts_SG
+├── DL_Sales_SG
+├── DL_IT_SG
+
+Explanation:
+
+- **Accounts**: User accounts created in Active Directory
+- **Global Groups**: Department-based groups containing users
+- **Domain Local Groups**: Groups used to assign resource permissions
+- **Permissions**: Access rights assigned to shared resources
+
+This model makes permission management **structured and scalable**.
+
+---
+
+## Benefits
+
+Using security groups provides several advantages:
+
+- Centralized access management
+- Reduced administrative effort
+- Easier permission changes
+- Improved security control
+- Scalable infrastructure design
+
+---
+

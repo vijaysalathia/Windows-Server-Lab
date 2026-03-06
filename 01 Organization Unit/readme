@@ -1,0 +1,65 @@
+# Organizational Unit (OU) Structure
+
+In this project, Organizational Units (OU) were created in Active Directory to organize users, computers, and resources based on departments.
+
+OU structure helps administrators apply **Group Policies**, manage users efficiently, and maintain a clear hierarchy within the domain.
+
+---
+
+## Company Structure
+
+The domain represents a company named **ABC*.  
+Different departments were created as Organizational Units.
+
+ABC
+├── HR
+├── Accounts
+├── Sales
+├── IT
+├── Workstations
+├── Servers
+└── Groups
+
+
+---
+
+## Purpose of Each OU
+
+### HR
+Contains user accounts belonging to the Human Resources department.
+
+### Accounts
+Contains user accounts related to the finance and accounts team.
+
+### Sales
+Stores user accounts for the sales department.
+
+### IT
+Contains administrative accounts and IT department users.
+
+### Workstations
+Stores computer objects for domain joined client machines.
+
+### Servers
+Contains server computer objects.
+
+### Groups
+Contains security groups used for access control and permission management.
+
+---
+
+## Benefits of OU Structure
+
+- Organized user and computer management
+- Easier Group Policy application
+- Simplified administration
+- Better security control
+- Scalable infrastructure design
+
+---
+
+## Screenshot
+
+Below is the screenshot of the OU structure created in Active Directory.
+
+![OU Structure](ou-structure.png)

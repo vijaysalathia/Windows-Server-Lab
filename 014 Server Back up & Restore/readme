@@ -1,0 +1,73 @@
+# Windows Server Backup and Restore
+
+Windows Server Backup is a built-in feature that allows administrators to create backups of server data, system state, and entire volumes. It helps protect critical data and enables recovery in case of system failure, accidental deletion, or data corruption.
+
+In this lab environment, Windows Server Backup was configured to back up server data and demonstrate the restore process.
+
+---
+
+## Purpose of Server Backup
+
+Server backup helps organizations:
+
+- Protect important data
+- Recover files after accidental deletion
+- Restore the system after failure
+- Maintain business continuity
+
+Regular backups are essential for disaster recovery and data protection.
+
+---
+
+## Backup Configuration
+
+In this lab, Windows Server Backup was configured to back up server data.
+
+Example backup configuration:
+
+Backup Type: Full Server Backup  
+Backup Destination: Local Disk  
+Schedule: Manual Backup  
+
+This ensures that critical server data can be restored if required.
+
+---
+
+## Configuration Steps
+
+1. Open **Server Manager**
+2. Install **Windows Server Backup Feature**
+3. Open **Windows Server Backup**
+4. Select **Local Backup**
+5. Click **Backup Once** or configure **Backup Schedule**
+6. Select the items to back up (Full Server or specific volumes)
+7. Choose backup destination
+8. Start the backup process
+
+---
+
+## Restore Process
+
+If data is lost or deleted, it can be restored using Windows Server Backup.
+
+Steps:
+
+1. Open **Windows Server Backup**
+2. Click **Recover**
+3. Select backup location
+4. Choose backup date and time
+5. Select files, folders, or volumes to restore
+6. Restore the data to the original or alternate location
+
+---
+
+## Benefits
+
+Using Windows Server Backup provides:
+
+- Data protection
+- Disaster recovery capability
+- Quick file restoration
+- Business continuity
+
+---

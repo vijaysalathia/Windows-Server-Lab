@@ -1,0 +1,88 @@
+# Windows Server Security Hardening
+
+Security Hardening refers to the process of securing a server by applying security configurations, policies, and restrictions to reduce vulnerabilities and protect the system from unauthorized access.
+
+In this Windows Server lab, several security policies were configured to improve system security and protect domain resources.
+
+---
+
+## Purpose of Security Hardening
+
+Security hardening helps administrators:
+
+- Protect servers from unauthorized access
+- Enforce strong authentication policies
+- Restrict remote access
+- Control network traffic using firewall rules
+- Reduce security risks in the infrastructure
+
+---
+
+## Implemented Security Policies
+
+The following security configurations were implemented in this lab environment.
+
+### Password Policy
+
+Password policies were configured using Group Policy to enforce strong passwords.
+
+Example configuration:
+
+Minimum Password Length: 10 characters  
+Password Complexity: Enabled  
+Password History: Enabled  
+
+This ensures users create strong and secure passwords.
+
+---
+
+### Account Lockout Policy
+
+Account lockout settings were configured to prevent brute-force login attempts.
+
+Example configuration:
+
+Account Lockout Threshold: 5 failed attempts  
+Lockout Duration: 15 minutes  
+Reset Counter After: 15 minutes  
+
+This helps prevent unauthorized login attempts.
+
+---
+
+### Secure Remote Desktop (RDP)
+
+Remote Desktop access was secured using the following measures:
+
+- Enabled **Network Level Authentication (NLA)**
+- Restricted RDP access to authorized users only
+- Limited administrative access
+
+This reduces the risk of unauthorized remote access.
+
+---
+
+### Windows Firewall Configuration
+
+Windows Firewall was configured to control network traffic and allow only necessary services.
+
+Examples:
+
+- Allow Remote Desktop
+- Allow Domain Services
+- Block unnecessary ports
+
+This helps protect the server from network-based attacks.
+
+---
+
+## Benefits
+
+Security hardening provides several advantages:
+
+- Improved server protection
+- Reduced attack surface
+- Controlled user access
+- Better compliance with security standards
+
+---

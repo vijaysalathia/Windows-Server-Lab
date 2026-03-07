@@ -1,0 +1,76 @@
+# Adding Users to Security Groups
+
+In this lab, user accounts were added to security groups in **Active Directory** to manage access to shared resources efficiently.
+
+Instead of assigning permissions directly to individual users, permissions are assigned to security groups. Users are then added to those groups.
+
+This approach simplifies administration and follows standard enterprise best practices.
+
+---
+
+## Purpose
+
+Adding users to security groups helps administrators:
+
+- Manage permissions easily
+- Control access to shared folders
+- Apply security policies efficiently
+- Reduce administrative complexity
+
+---
+
+## Example Scenario
+
+In the sample organization **ABC**, each department has its own security group.
+
+Example:
+ABC
+├── HR
+│ └── HR_Group
+├── Accounts
+│ └── Accounts_Group
+├── Sales
+│ └── Sales_Group
+└── IT
+└── IT_Admins
+
+
+Users belonging to a department are added to the respective group.
+
+For example:
+
+- HR users → added to **HR_SG**
+- Accounts users → added to **Accounts_SG**
+- Sales users → added to **Sales_SG**
+- IT users → added to **IT_SG**
+
+and then 
+
+- HR_SG  → added to **DL_HR_SG**
+- Accounts_SG  → added to **DL_Accounts_SG**
+- Sales_SG  → added to **DL_Sales_SG**
+- IT_SG  → added to **DL_IT_SG**
+---
+
+## Steps Performed
+
+1. Open **Active Directory Users and Computers**
+2. Navigate to the **Groups Organizational Unit**
+3. Open the required **Security Group**
+4. Go to the **Members** tab
+5. Click **Add**
+6. Select the user account
+7. Apply and save the configuration
+
+---
+
+## Benefits
+
+Using security groups provides:
+
+- Centralized permission management
+- Simplified user administration
+- Better security control
+- Scalable access management
+
+---

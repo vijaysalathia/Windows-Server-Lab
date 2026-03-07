@@ -1,0 +1,56 @@
+# Shadow Copy Configuration
+
+Shadow Copy (also known as **Previous Versions**) is a Windows Server feature that allows administrators and users to restore earlier versions of files and folders.
+
+In this lab, Shadow Copy was enabled on the file server volume to allow recovery of deleted or modified files without needing to restore from backup.
+
+---
+
+## Purpose of Shadow Copy
+
+Shadow Copy helps organizations:
+
+- Recover accidentally deleted files
+- Restore previous versions of modified files
+- Reduce dependency on administrator for file recovery
+- Improve data protection
+
+---
+
+## How Shadow Copy Works
+
+When Shadow Copy is enabled on a volume, Windows Server automatically creates snapshots of files at scheduled intervals.
+
+These snapshots allow users to restore previous versions of files directly from the file properties menu.
+
+---
+
+## Example Scenario
+
+A user accidentally deletes or overwrites an important document stored on a shared drive.
+
+Using **Previous Versions**, the user can restore an earlier copy of the file without needing full backup restoration.
+
+---
+
+## Configuration Steps
+
+1. Open **This PC** on the server
+2. Right-click the volume containing shared folders (Example: `C:` drive)
+3. Select **Configure Shadow Copies**
+4. Enable Shadow Copies for the volume
+5. Configure storage location and schedule
+6. Apply and save configuration
+
+---
+
+## Benefits
+
+Shadow Copy provides several advantages:
+
+- Quick file recovery
+- Reduced administrative workload
+- Improved file protection
+- Simple restoration for users
+
+---

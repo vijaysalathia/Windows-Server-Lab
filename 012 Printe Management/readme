@@ -1,0 +1,49 @@
+# Print Server Management
+
+Print Management in Windows Server allows administrators to centrally manage printers and provide shared printing services to users in a domain environment.
+
+In this lab, a printer was installed on the Windows Server and shared so that domain users can access it through the network.
+
+---
+
+## Purpose of Print Management
+
+Print Management helps organizations:
+
+- Centrally manage printers
+- Allow users to access shared printers
+- Control printer permissions
+- Simplify printer deployment
+
+---
+
+## Printer Sharing
+
+A network printer was installed on the server and shared so users in the domain can connect and print documents.
+
+Example configuration:
+Printer Name: Office_Printer
+Server: Windows Server
+Shared Name: Office_Printer
+
+
+Users connected to the printer through the shared network path.
+
+---
+
+## Configuration Steps
+
+1. Connect or install the printer on the server
+2. Open **Print Management Console**
+3. Navigate to:
+Print Servers
+→ Printers
+
+
+4. Add a new printer
+5. Enable **Printer Sharing**
+6. Assign a shared name
+7. Configure printer permissions if required
+
+Users can connect to the shared printer using the server network path.
+

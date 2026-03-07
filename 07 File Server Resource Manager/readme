@@ -1,0 +1,59 @@
+# File Server Resource Manager (FSRM)
+
+File Server Resource Manager (FSRM) is a Windows Server feature used to manage and control the storage resources on a file server.
+
+In this lab, FSRM was configured to apply **disk quota limits** on user folders to prevent excessive storage usage.
+
+---
+
+## Purpose of FSRM
+
+FSRM helps administrators:
+
+- Control disk space usage
+- Apply storage quotas
+- Monitor file storage
+- Prevent users from consuming excessive disk space
+- Maintain server performance
+
+---
+
+## Quota Configuration
+
+In this lab environment, a quota limit was configured for user folders.
+
+Example configuration:
+User Folder Storage Limit
+Quota Size: 2 GB
+Quota Type: Hard Quota
+
+
+A **Hard Quota** prevents users from saving files once the storage limit is reached.
+
+---
+
+## Configuration Steps
+
+1. Install **File Server Resource Manager** role from Server Manager
+2. Open **File Server Resource Manager**
+3. Navigate to:
+Quota Management
+→ Quotas
+
+
+4. Select **Create Quota**
+5. Choose the folder path
+6. Apply quota template or define custom quota
+7. Set the quota limit (Example: 2 GB)
+8. Apply and save configuration
+
+---
+
+## Benefits
+
+Using FSRM provides:
+
+- Better storage management
+- Prevention of disk space misuse
+- Monitoring of file server storage
+- Improved server performance

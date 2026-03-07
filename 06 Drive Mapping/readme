@@ -1,0 +1,70 @@
+# Drive Mapping using Group Policy
+
+Drive Mapping was configured using **Group Policy** to automatically connect users to shared network drives when they log in to the domain.
+
+This method eliminates the need for users to manually connect to shared folders and ensures consistent access to departmental resources.
+
+---
+
+## Purpose of Drive Mapping
+
+Drive mapping helps administrators:
+
+- Automatically connect users to network drives
+- Provide easy access to shared folders
+- Standardize resource access across the organization
+- Reduce manual configuration on client computers
+
+---
+
+## Example Scenario
+
+In the sample organization **ABC**, each department has its own shared drive.
+
+Example:
+Shares
+├── H: → HR_Drive Shared Folder
+├── A: → Accounts_Drive Shared Folder
+├── S: → Sales_Drive Shared Folder
+└── I: → IT_Drive Shared Folder
+
+
+
+When users log in to the domain, the appropriate network drive is automatically mapped based on their department.
+
+---
+
+## Configuration Steps
+
+1. Open **Group Policy Management**
+2. Create or edit a **Group Policy Object (GPO)**
+3. Navigate to:
+
+User Configuration
+→ Preferences
+→ Windows Settings
+→ Drive Maps
+
+
+4. Right click → **New → Mapped Drive**
+5. Configure:
+
+- Location: Network share path
+- Drive letter
+- Action: Create
+- Apply to appropriate users or groups
+
+6. Link the GPO to the appropriate **Organizational Unit (OU)**.
+
+---
+
+## Benefits
+
+Using Group Policy for drive mapping provides:
+
+- Automatic drive connection for users
+- Consistent configuration across systems
+- Easier administration
+- Reduced user errors
+
+---

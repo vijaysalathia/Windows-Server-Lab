@@ -1,0 +1,76 @@
+# Folder Redirection
+
+Folder Redirection is a Windows Server feature that allows administrators to store user folders on a central server instead of the local computer.
+
+In this lab, folder redirection was configured using **Group Policy** so that important user folders are automatically stored on the file server.
+
+---
+
+## Purpose of Folder Redirection
+
+Folder Redirection helps organizations:
+
+- Store user data on a central server
+- Protect files from local system failures
+- Simplify backup and recovery
+- Allow users to access their data from different computers
+
+---
+
+## Redirected Folders
+
+In this lab environment, the following folders were redirected:
+
+- Desktop
+- Documents
+
+This means that files saved in these folders are actually stored on the **server instead of the local machine**.
+
+---
+
+## Example Structure
+
+Example storage structure on the server:
+C:\FileServer
+│
+├── user1
+│ ├── Desktop
+│ └── Documents
+│
+├── user2
+│ ├── Desktop
+│ └── Documents
+
+
+Each user's redirected folders are stored in their own directory.
+
+---
+
+## Configuration Steps
+
+1. Open **Group Policy Management**
+2. Create or edit a **Group Policy Object (GPO)**
+3. Navigate to:
+User Configuration
+→ Policies
+→ Windows Settings
+→ Folder Redirection
+
+
+4. Select the folder to redirect (Example: Documents)
+5. Choose **Basic – Redirect everyone's folder to the same location**
+6. Set the network path to the shared folder on the server
+7. Apply the policy and update Group Policy
+
+---
+
+## Benefits
+
+Folder Redirection provides several advantages:
+
+- Centralized user data storage
+- Improved data protection
+- Easier backup and recovery
+- Access to files from multiple domain computers
+
+---

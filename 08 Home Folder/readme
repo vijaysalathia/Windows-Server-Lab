@@ -1,0 +1,64 @@
+# Home Folder Configuration
+
+A Home Folder was configured in this Windows Server lab to provide each user with a personal storage location on the server.
+
+A Home Folder allows users to store their files securely on the network. Each user receives a dedicated folder that only they can access.
+
+---
+
+## Purpose of Home Folder
+
+Home folders help organizations:
+
+- Provide personal storage space for users
+- Store user files on the central server
+- Improve data security
+- Simplify backup and data recovery
+
+Each user receives a private folder that is automatically mapped when they log in to the domain.
+
+---
+
+## Example Structure
+
+Example home folder directory on the server:
+D:\HomeFolders
+│
+├── user1
+├── user2
+├── user3
+└── user4
+
+
+Each folder belongs to a specific user and permissions are automatically assigned.
+
+---
+
+## Configuration Steps
+
+1. Create a folder on the server (Example: `C:\HomeFolder`)
+2. Share the folder with appropriate permissions
+3. Open **Active Directory Users and Computers**
+4. Open the properties of a user account
+5. Go to the **Profile** tab
+6. Configure the **Home Folder** option
+7. Assign a drive letter (Example: H:)
+8. Set the network path to the user folder
+
+Example:
+Drive Letter: H:
+Path: \DC01\HomeFolder$
+
+
+---
+
+## Benefits
+
+Using Home Folders provides:
+
+- Centralized storage for user data
+- Secure personal storage
+- Easier backup and management
+- Improved organization of user files
+
+---

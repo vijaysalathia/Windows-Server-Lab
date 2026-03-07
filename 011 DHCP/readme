@@ -1,0 +1,58 @@
+# DHCP Server Configuration
+
+Dynamic Host Configuration Protocol (DHCP) is a network service used to automatically assign IP addresses and other network configuration settings to client computers.
+
+In this lab environment, DHCP was configured on the Windows Server to automatically provide IP addresses to systems connected to the network.
+
+---
+
+## Purpose of DHCP
+
+DHCP helps administrators:
+
+- Automatically assign IP addresses to client machines
+- Reduce manual IP configuration
+- Prevent IP address conflicts
+- Simplify network management
+
+---
+
+## DHCP Scope Configuration
+
+A DHCP scope defines the range of IP addresses that can be assigned to devices in the network.
+
+Example configuration:
+Network: 192.168.1.0
+IP Range: 192.168.1.100 – 192.168.1.200
+Subnet Mask: 255.255.255.0
+Default Gateway: 192.168.1.1
+DNS Server: Domain Controller
+
+
+---
+
+## Configuration Steps
+
+1. Install **DHCP Server Role** from Server Manager
+2. Open **DHCP Management Console**
+3. Create a **New Scope**
+4. Define the IP address range
+5. Configure subnet mask
+6. Add default gateway
+7. Configure DNS server information
+8. Activate the scope
+
+Once configured, client computers will automatically receive network settings when they connect to the network.
+
+---
+
+## Benefits
+
+Using DHCP provides:
+
+- Automatic network configuration
+- Reduced administrative workload
+- Efficient IP address management
+- Prevention of IP conflicts
+
+---
